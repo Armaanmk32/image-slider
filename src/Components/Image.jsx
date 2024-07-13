@@ -42,12 +42,16 @@ function Image(){
 
 
 
-    return <div className=" sm:flex text-center">
-        <div className="flex justify-center">
+    return <div className="flex justify-center">
+        <div className="text-center">
+
+        
+        <div>
             <img className="bg-orange-500 sm:w-[900px] w-[350px] object-cover sm:h-[390px] rounded-xl mt-10" src= {images[index]} />
         </div>
-        <button onClick={handleNext} className="bg-sky-500 h-10 w-24 mt-16  sm:px-16 rounded sm:py-4 m-5 text-white text-3xl">Next</button>
-        <button onClick={handlePrev} className="bg-sky-500 h-10 w-24 mt-16  sm:px-16 rounded sm:py-4 m-5 text-white text-3xl">Prev</button>
+        <button onClick={handleNext} className="bg-sky-500 h-10 w-24 mt-16   rounded  m-5 text-white text-3xl">Next</button>
+        <button onClick={handlePrev} className="bg-sky-500 h-10 w-24 mt-16  rounded  m-5 text-white text-3xl">Prev</button>
+        </div>
     </div>
 }
 
